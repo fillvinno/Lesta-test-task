@@ -1,0 +1,25 @@
+@import "scss/variables";
+@import "scss/mixins";
+@import "scss/fonts";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: $fg-main;
+  font-family: $font-roboto;
+  height: auto;
+  min-height: 100%;
+  background-color: $bg-main;
+  background-image: url("src/assets/bckg_texture.jpg");
+  background-repeat: repeat-y;
+  background-size: 100%;
+  padding-top: 140px;
+}

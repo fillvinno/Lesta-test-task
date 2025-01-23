@@ -1,0 +1,85 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 112px 40px 24px 40px;
+  background-color: #010A19;
+  border-top: 1px solid rgba(255, 255, 255, .12);
+
+  .logoSection {
+    width: 432px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    opacity: .8;
+    font-size: 16px;
+    line-height: 1.5em;
+
+    img {
+      height: 48px;
+      width: 143px;
+    }
+  }
+
+  .leftMediaLinks {
+    display: flex;
+    gap: 36px;
+    flex-direction: column;
+
+    h4 {
+      @include footer-headings;
+    }
+
+    .links {
+      @include footer-links;
+
+      a {
+        vertical-align: middle;
+
+        &:hover {
+          color: white;
+          transition: .1s;
+        }
+      }
+
+      img {
+        width: 36px;
+        height: 36px;
+        margin-right: 12px;
+      }
+    }
+  }
+
+  .rightMediaLinks {
+    display: flex;
+    gap: 36px;
+    flex-direction: column;
+
+    h4 {
+      @include footer-headings;
+    }
+
+    .links {
+      @include footer-links;
+
+      a {
+        display: flex;
+        align-items: center;
+        color: #b2b5ba;
+
+        &:hover {
+          color: white;
+          transition: .1s;
+        }
+      }
+
+      img {
+        width: 36px;
+        height: 36px;
+        margin-right: 12px;
+      }
+    }
+  }
+}

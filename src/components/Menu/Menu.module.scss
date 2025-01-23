@@ -1,0 +1,126 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: 13px;
+
+  .top {
+    font-family: Arial, "Helvetica CY", Helvetica, sans-serif;
+    height: 37px;
+    padding: 0 10px;
+    font-size: 13px;
+    background-color: #050505;
+    z-index: 25000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .arrow {
+      cursor: pointer;
+
+      @include arrow;
+    }
+
+    .links {
+      a {
+        color: #fff;
+        opacity: .6;
+        margin: 0 10px;
+
+        &:hover {
+          opacity: 1;
+          transition: .1s;
+        }
+      }
+
+      .lestaArrow  {
+        vertical-align: middle;
+      }
+    }
+
+    .userMenu {
+      .notifications {
+        display: inline-block;
+        position: relative;
+        z-index: 0;
+        color: transparent;
+        opacity: .6;
+        background-position: 0 -1090px;
+        background-image: url(../../assets/sprite.svg);
+        background-repeat: no-repeat;
+        line-height: 34px;
+        width: 22px;
+        height: 22px;
+        vertical-align: middle;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+          transition: .1s;
+        }
+      }
+
+      .user {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 0 10px;
+      }
+    }
+  }
+
+  .bottom {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 0 72px;
+    background-color: rgba(21, 29, 43, 0.55);
+
+    .left {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      a {
+        @include bottom-menu-links;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        height: 100%;
+
+        &:hover {
+          background-color: #151D2B;
+          transition: .1s;
+        }
+      }
+    }
+
+    .right {
+      a {
+        @include bottom-menu-links;
+      }
+
+      .dowload {
+        background-color: $red-accent;
+        color: #fff;
+        padding: 12px 20px;
+        cursor: pointer;
+        border-radius: 4px;
+        width: 180px;
+        display: inline-flex;
+        justify-content: center;
+
+        &:hover {
+          background-color: $red-accent-dark;
+          transition: .2s;
+        }
+      }
+    }
+  }
+}

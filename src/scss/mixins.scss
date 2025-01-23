@@ -1,0 +1,32 @@
+@import './variables';
+
+@mixin arrow {
+  &:after {
+    margin-left: 6px;
+    content: url("src/assets/arrow.svg");
+    height: 14px;
+  }
+}
+
+@mixin bottom-menu-links {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+}
+
+@mixin footer-headings {
+  font-size: 16px;
+  font-family: $font-roboto-condensed;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #e5e5e5;
+}
+
+@mixin footer-links {
+  display: grid;
+  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 24px;
+  row-gap: 24px;
+}

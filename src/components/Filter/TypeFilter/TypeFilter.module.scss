@@ -1,0 +1,19 @@
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+
+  .type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    width: 100%;
+
+    &:hover {
+      background-color: #151D2B;
+      transition: .1s;
+    }
+  }
+}

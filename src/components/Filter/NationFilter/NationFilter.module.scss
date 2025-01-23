@@ -1,0 +1,16 @@
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 24px;
+
+  img {
+    height: 36px;
+
+    &:hover {
+      scale: 1.2;
+      cursor: pointer;
+      transition: .15s;
+    }
+  }
+}

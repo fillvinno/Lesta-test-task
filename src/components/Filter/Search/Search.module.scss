@@ -1,0 +1,12 @@
+@import '../../../scss/variables';
+
+.wrap {
+  height: 36px;
+  background-color: #151D2B;
+  outline: none;
+  border: 1px solid $fg-main;
+  border-radius: 2px;
+  width: 300px;
+  color: $fg-main;
+  padding: 0 12px;
+}
