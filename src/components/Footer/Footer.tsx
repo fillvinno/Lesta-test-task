@@ -4,7 +4,7 @@ import footerLogo from '../../assets/footer-logo.svg'
 
 const Footer = () => {
   return (
-    <div className={styles.wrap}>
+    <footer className={styles.wrap}>
       <div className={styles.logoSection}>
         <img src={footerLogo} alt='footer-logo'/>
         <div className={styles.about}>
@@ -82,7 +82,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </footer>
   );
 };
 
